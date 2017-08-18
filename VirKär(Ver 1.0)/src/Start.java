@@ -5,32 +5,32 @@ public class Start {
 	public static void main(String[] args) {
 
 		/**
-		 * Hier wird die Hauptframe geöffnet
+		 * Hier wird die Hauptframe geÃ¶ffnet
 		 * 
-		 *Für den GUI Design benutzt es Nimbus Feel and Look. Hier wird es auf gerufen 
+		 *FÃ¼r den GUI Design benutzt es Nimbus Feel and Look. Hier wird es auf gerufen 
 		 *http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
 		 * 
 		 * Einleitung: 
-		 * Bei VirKär können sie Virtuelle Kärtchen erstellen.
-		 * das Erste was sie machen können ist einen neuen Kärtchensammlung erstellen.
-		 * dafür gehen sie auf "Kärtchen Erstellen".
+		 * Bei VirKÃ¤r kÃ¶nnen sie Virtuelle KÃ¤rtchen erstellen.
+		 * das Erste was sie machen kÃ¶nnen ist einen neuen KÃ¤rtchensammlung erstellen.
+		 * dafÃ¼r gehen sie auf "KÃ¤rtchen Erstellen".
 		 * 
-		 * Heir können Sie die zwei Faktoren eines Kärtchen eingeben. Das erste wird gezeigt, das zweite
-		 * wird geprüft.
-		 * Wenn sie auf weiter drücken wird das Kärtchen gespeichert. 
-		 * Sie können solange machen bis sie zufrieden sind.
-		 * Wenn sie fertig sind können sie auf "Beenden" Drücken.
+		 * Heir kÃ¶nnen Sie die zwei Faktoren eines KÃ¤rtchen eingeben. Das erste wird gezeigt, das zweite
+		 * wird geprÃ¼ft.
+		 * Wenn sie auf weiter drÃ¼cken wird das KÃ¤rtchen gespeichert. 
+		 * Sie kÃ¶nnen solange machen bis sie zufrieden sind.
+		 * Wenn sie fertig sind kÃ¶nnen sie auf "Beenden" DrÃ¼cken.
 		 * 
-		 * Jetzt können sie auf Kärtchen abfragen gehen, wo ihr die Lernen könnt
-		 * Ein zufälliges Kärtchen wird ausgewählt und sie können euren Antwort tippen.
-		 * wenn sie wissen wollen, ob es richtig ist können sie auf "Überprüfen" drücken.
-		 * bei Weiter kommt ein neues, zufälliges Kärtchen. Dies geht solange, bis sie zufrieden sind.
-		 * Wenn sie fertig sind, können sie auf "Beenden" drücken.
+		 * Jetzt kÃ¶nnen sie auf KÃ¤rtchen abfragen gehen, wo ihr die Lernen kÃ¶nnt
+		 * Ein zufÃ¤lliges KÃ¤rtchen wird ausgewÃ¤hlt und sie kÃ¶nnen euren Antwort tippen.
+		 * wenn sie wissen wollen, ob es richtig ist kÃ¶nnen sie auf "ÃœberprÃ¼fen" drÃ¼cken.
+		 * bei Weiter kommt ein neues, zufÃ¤lliges KÃ¤rtchen. Dies geht solange, bis sie zufrieden sind.
+		 * Wenn sie fertig sind, kÃ¶nnen sie auf "Beenden" drÃ¼cken.
 		 * 
-		 * Wenn sie noch einen neuen Kärtchen erstellen wollen, können sie auf "Kärtchensammlung Löschen" drücken,
+		 * Wenn sie noch einen neuen KÃ¤rtchen erstellen wollen, kÃ¶nnen sie auf "KÃ¤rtchensammlung LÃ¶schen" drÃ¼cken,
 		 * damit sie platz haben
 		 * 
-		 * @author Pedro de Souza Winkler
+		 * @author Pedro
 		 */
         
 		try {
