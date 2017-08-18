@@ -16,25 +16,25 @@ import javax.swing.*;
 
 /**
  *
- * @author Pedro de Souza Winkler
+ * @author Pedro
  */
 public class KaertchenGUI extends javax.swing.JFrame implements ActionListener{
 	
-	//Menü Elemente
+	//MenÃ¼ Elemente
     private javax.swing.JLabel lblTitel;
     private javax.swing.JButton btnKaerErstellen, btnKaerLernen, btnLoeschen, btnHilfe;
-
-    //Kärerstellen Elemente
+    
+    //KÃ¤rerstellen Elemente
     private javax.swing.JLabel lblEingabe1, lblEingabe2;
     private javax.swing.JTextField txtEingabe1, txtEingabe2;
     private javax.swing.JButton btnWeiterErstellen, btnBeendenErstellen;
     
-    //KärLernen Elemente
+    //KÃ¤rLernen Elemente
     private javax.swing.JLabel lblGegebenWort, lblGesuchtWort, lblGegebenWortgezeigt, lblRichtigodFalsch;
     private javax.swing.JTextField txtGesuchtEingabe;
     private javax.swing.JButton btnWeiterLernen, btnBeendenLernen, btnUeberpruefenLernen;
    
-    //Variablen und Instanz für die WoerterListe
+    //Variablen und Instanz fÃ¼r die WoerterListe
     private WortListDM wdm = new WortListDM();
     private Random rnd = new Random();
     
@@ -45,20 +45,20 @@ public class KaertchenGUI extends javax.swing.JFrame implements ActionListener{
     private WortList KaerchenLernenGUI = new WortList();
     public KaertchenGUI() {
     	
-    	//Elemente:Menü
-    	lblTitel = new JLabel("VirKär");
+    	//Elemente:MenÃ¼
+    	lblTitel = new JLabel("VirKÃ¤r");
     	lblTitel.setBounds(210,25,100,20);
     	lblTitel.setFont(new Font("Verdana", Font.BOLD, 24));
     	
-    	btnKaerErstellen = new JButton("Kärtchen erstellen");
+    	btnKaerErstellen = new JButton("KÃ¤rtchen erstellen");
     	btnKaerErstellen.setBounds(150,125,200,40);
     	btnKaerErstellen.addActionListener(this);
     	
-    	btnKaerLernen = new JButton("Kärtchen abfragen");
+    	btnKaerLernen = new JButton("KÃ¤rtchen abfragen");
     	btnKaerLernen.setBounds(150,200,200,40);
     	btnKaerLernen.addActionListener(this);
     	    
-    	btnLoeschen = new JButton("Kärtchensammlung Löschen");
+    	btnLoeschen = new JButton("KÃ¤rtchensammlung LÃ¶schen");
     	btnLoeschen.setBounds(150,275,200,40);
     	btnLoeschen.addActionListener(this);
     	
@@ -67,7 +67,7 @@ public class KaertchenGUI extends javax.swing.JFrame implements ActionListener{
     	btnHilfe.setFont(new Font("Verdana", Font.BOLD, 16));
     	btnHilfe.addActionListener(this);
     	
-    	//Elemente: Kärtschen erstellen
+    	//Elemente: KÃ¤rtschen erstellen
     	
     	lblEingabe1 = new JLabel("1. Eingabe");
     	lblEingabe1.setBounds(10,75,200,30);
@@ -99,7 +99,7 @@ public class KaertchenGUI extends javax.swing.JFrame implements ActionListener{
     	btnBeendenErstellen.addActionListener(this);
     	btnBeendenErstellen.setVisible(false);
     	
-    	//Elemente:KärLernen
+    	//Elemente:KÃ¤rLernen
     	
     	lblGegebenWort = new JLabel("gegebenes Wort: ");
     	lblGegebenWort.setBounds(10,40,250,30);
@@ -136,7 +136,7 @@ public class KaertchenGUI extends javax.swing.JFrame implements ActionListener{
     	btnBeendenLernen.addActionListener(this);
     	btnBeendenLernen.setVisible(false);
     	
-    	btnUeberpruefenLernen = new JButton("Überprüfen");
+    	btnUeberpruefenLernen = new JButton("ÃœberprÃ¼fen");
     	btnUeberpruefenLernen.setBounds(390,250,100,30);
     	btnUeberpruefenLernen.addActionListener(this);
     	btnUeberpruefenLernen.setVisible(false);
@@ -145,7 +145,7 @@ public class KaertchenGUI extends javax.swing.JFrame implements ActionListener{
     	this.setSize(500, 460);
     	this.setResizable(false);
     	this.setLocation(700, 200);
-    	this.setTitle("VirKär Ver. 1.0");
+    	this.setTitle("VirKÃ¤r Ver. 1.0");
     	this.setLayout(null);
     	this.add(lblTitel);
     	this.add(btnKaerErstellen);
@@ -171,15 +171,15 @@ public class KaertchenGUI extends javax.swing.JFrame implements ActionListener{
 
 	public void actionPerformed(ActionEvent e) {
 		
-		//Anzeige von Menü zu Kärerstellen
+		//Anzeige von MenÃ¼ zu KÃ¤rerstellen
 		if(e.getSource() == btnKaerErstellen){
-			//Stellt die Elementen vom Menü nicht Visible
+			//Stellt die Elementen vom MenÃ¼ nicht Visible
 			lblTitel.setVisible(false);
 			btnKaerErstellen.setVisible(false);
 			btnKaerLernen.setVisible(false);
 			btnHilfe.setVisible(false);
 			btnLoeschen.setVisible(false);
-			//Stellt dei Elementen vom Kärerstellen auf Visible
+			//Stellt dei Elementen vom KÃ¤rerstellen auf Visible
 			lblEingabe1.setVisible(true);
 			lblEingabe2.setVisible(true);
 			txtEingabe1.setVisible(true);
@@ -189,16 +189,16 @@ public class KaertchenGUI extends javax.swing.JFrame implements ActionListener{
 		
 		}
 		
-		//Anzeige von Kärerstellen zu Menü
+		//Anzeige von KÃ¤rerstellen zu MenÃ¼
 		if(e.getSource() == btnBeendenErstellen){
-			//Stellt die Elementen vom Kärerstellen nicht Visible
+			//Stellt die Elementen vom KÃ¤rerstellen nicht Visible
 			lblEingabe1.setVisible(false);
 			lblEingabe2.setVisible(false);
 			txtEingabe1.setVisible(false);
 			txtEingabe2.setVisible(false);
 			btnWeiterErstellen.setVisible(false);
 			btnBeendenErstellen.setVisible(false);
-			//Stellt dei Elementen vom Menü auf Visible
+			//Stellt dei Elementen vom MenÃ¼ auf Visible
 			lblTitel.setVisible(true);
 			btnKaerErstellen.setVisible(true);
 			btnKaerLernen.setVisible(true);
@@ -211,16 +211,16 @@ public class KaertchenGUI extends javax.swing.JFrame implements ActionListener{
 			}
 			
 		}
-		//Anzeige von Menü zu Kärlernen
+		//Anzeige von MenÃ¼ zu KÃ¤rlernen
 		if(e.getSource() == btnKaerLernen){
 			if(wdm.isWoerterlisteEmpty() == false){
-			//Stellt die Elementen vom Menü nicht Visible
+			//Stellt die Elementen vom MenÃ¼ nicht Visible
 			lblTitel.setVisible(false);
 			btnKaerErstellen.setVisible(false);
 			btnKaerLernen.setVisible(false);
 			btnHilfe.setVisible(false);
 			btnLoeschen.setVisible(false);
-			//Stellt dei Elementen vom Kärlernen auf Visible
+			//Stellt dei Elementen vom KÃ¤rlernen auf Visible
 			lblGegebenWort.setVisible(true);
 			lblGesuchtWort.setVisible(true);
 			txtGesuchtEingabe.setVisible(true);
@@ -232,18 +232,18 @@ public class KaertchenGUI extends javax.swing.JFrame implements ActionListener{
 			
 			//NImmt den Wert von der Woerterliste im DM 
 			KaerchenPackLernenGUI = new ArrayList<WortList>(wdm.getWoerterliste());
-			 // auswahl von einen zufälligen Woerterliste
+			 // auswahl von einen zufÃ¤lligen Woerterliste
 			KaerchenLernenGUI = KaerchenPackLernenGUI.get(rnd.nextInt(wdm.lengthOfWoerterliste()));
 			//Setzt die Strings von Woerterliste auf die Controlls
 			lblGegebenWortgezeigt.setText(KaerchenLernenGUI.Wort);
 			}else{
-				JOptionPane.showMessageDialog(null, "Sie haben noch keinen Kärtchensammlung erstellt");
+				JOptionPane.showMessageDialog(null, "Sie haben noch keinen KÃ¤rtchensammlung erstellt");
 			}
 		}
 		
-		//Für den Auswahl einen Zufälligen Woerterliste
+		//FÃ¼r den Auswahl einen ZufÃ¤lligen Woerterliste
 		if(e.getSource() == btnWeiterLernen){
-			// auswahl von einen zufälligen Woerterliste
+			// auswahl von einen zufÃ¤lligen Woerterliste
 			KaerchenLernenGUI = null;
 			KaerchenLernenGUI = KaerchenPackLernenGUI.get(rnd.nextInt(wdm.lengthOfWoerterliste()));
 			KaerchenPackLernenGUI.toString();
@@ -253,9 +253,9 @@ public class KaertchenGUI extends javax.swing.JFrame implements ActionListener{
 			txtGesuchtEingabe.setText("");
 		}
 		
-		//Anzeige von Kärlernen zu Menü
+		//Anzeige von KÃ¤rlernen zu MenÃ¼
 		if(e.getSource() == btnBeendenLernen){
-			//Stellt die Elementen vom Kärlernen nicht Visible
+			//Stellt die Elementen vom KÃ¤rlernen nicht Visible
 			lblGegebenWort.setVisible(false);
 			lblGesuchtWort.setVisible(false);
 			txtGesuchtEingabe.setVisible(false);
@@ -264,7 +264,7 @@ public class KaertchenGUI extends javax.swing.JFrame implements ActionListener{
 			lblGegebenWortgezeigt.setVisible(false);
 			lblRichtigodFalsch.setVisible(false);
 			btnUeberpruefenLernen.setVisible(false);
-			//Stellt die Controlls vom Menü auf Visible
+			//Stellt die Controlls vom MenÃ¼ auf Visible
 			lblTitel.setVisible(true);
 			btnKaerErstellen.setVisible(true);
 			btnKaerLernen.setVisible(true);
@@ -272,7 +272,7 @@ public class KaertchenGUI extends javax.swing.JFrame implements ActionListener{
 			btnLoeschen.setVisible(true);
 		}
 		
-		//Erstellt eine Wortlist von den zwei Textfeldern,was danach in den ArrayList KaerchenPackGUI eingefügt wird. 
+		//Erstellt eine Wortlist von den zwei Textfeldern,was danach in den ArrayList KaerchenPackGUI eingefÃ¼gt wird. 
 		//Stellt wieder alles auf null nach dem Prozess
 		if(e.getSource() == btnWeiterErstellen){
 			if(txtEingabe1.getText().equals("")|| txtEingabe2.getText().equals("")){
@@ -285,11 +285,11 @@ public class KaertchenGUI extends javax.swing.JFrame implements ActionListener{
 			KaerchenPackGUI.add(KaerchenGUI);
 			txtEingabe1.setText("");
 			txtEingabe2.setText("");
-			JOptionPane.showMessageDialog(null, "Kärtchen wurde geschpeichert");
+			JOptionPane.showMessageDialog(null, "KÃ¤rtchen wurde geschpeichert");
 			}
 		}
 		
-		//Überprüft ob die angegebende Lösung richtig ist. Dabei wird der Label lblRichtigodFalsch geändert
+		//ÃœberprÃ¼ft ob die angegebende LÃ¶sung richtig ist. Dabei wird der Label lblRichtigodFalsch geÃ¤ndert
 		if(e.getSource() == btnUeberpruefenLernen){
 			if(txtGesuchtEingabe.getText() == ""){
 				JOptionPane.showMessageDialog(null, "Sie haben keinen Antwort gegeben.");
@@ -306,17 +306,17 @@ public class KaertchenGUI extends javax.swing.JFrame implements ActionListener{
 		
 		//Gibt den Hilfmessagebox aus
 		if(e.getSource() == btnHilfe){
-			JOptionPane.showMessageDialog(null, "<html><h1>VirKär Ver. 1.0</h1><p>Autor: Pedro de Souza Winkler</p><p>Herstellungsort: GIBMIT Pratteln</p><p>E-Mail:pedro.desouzawinkler@gibmit.ch</p><p>Ver.1.0 Release:07.04.17</p><p><br>Dieses Projekt wurde für den Modul 404 erstellt</p></html>");
+			JOptionPane.showMessageDialog(null, "<html><h1>VirKÃ¤r Ver. 1.0</h1><p>Autor: Pedro de Souza Winkler</p><p>Herstellungsort: GIBMIT Pratteln</p><p>E-Mail:pedro.desouzawinkler@gibmit.ch</p><p>Ver.1.0 Release:07.04.17</p><p><br>Dieses Projekt wurde fÃ¼r den Modul 404 erstellt</p></html>");
 		}
 		
-		//Damit man die möglichkeit hat, Einen Kärtchensammlung zu löschen, habe ich Löschfunktion eingesetzt
+		//Damit man die mÃ¶glichkeit hat, Einen KÃ¤rtchensammlung zu lÃ¶schen, habe ich LÃ¶schfunktion eingesetzt
 		if(e.getSource() == btnLoeschen){
 			if(wdm.isWoerterlisteEmpty() == false){
 				wdm.deleteWoerterliste();
-				JOptionPane.showMessageDialog(null, "<html>Die gespeicherte Kärtchensammlung<br>wurde gelöscht<html/>");
+				JOptionPane.showMessageDialog(null, "<html>Die gespeicherte KÃ¤rtchensammlung<br>wurde gelÃ¶scht<html/>");
 				btnKaerErstellen.setEnabled(true);
 			}else{
-				JOptionPane.showMessageDialog(null, "Sie haben noch keinen Kärtchensammlung erstellt");
+				JOptionPane.showMessageDialog(null, "Sie haben noch keinen KÃ¤rtchensammlung erstellt");
 			}
 		}
 	}
